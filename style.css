@@ -292,6 +292,7 @@ section {
 }
 
 .footer .share img {
+    /* Ajustado para aumentar o tamanho dos ícones */
     width: 50px;
     height: 50px;
     margin: 0.3rem;
@@ -306,29 +307,69 @@ section {
 }
 
 /*==================== MEDIA QUERIES (RESPONSIVIDADE) ====================*/
+
+/* Estilos para telas maiores que 768px (Desktop) */
+@media (min-width: 768px) {
+    .menu-btn {
+        display: none; /* Esconde o botão de menu em telas grandes */
+    }
+}
+
+/* Estilos para telas menores que 768px (Mobile/Tablet) */
 @media (max-width: 768px) {
     .header section {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--maincolor);
+        border-top: var(--border);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); /* Esconde o menu por padrão */
+        display: flex;
         flex-direction: column;
         text-align: center;
     }
+
+    .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* Mostra o menu quando ativo */
+    }
+
     .navbar a {
         display: block;
         margin: 1rem 0;
     }
+
+    .icons {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-btn {
+        display: block; /* Mostra o botão de menu */
+        cursor: pointer;
+    }
+
+    .menu-btn .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: var(--bg2);
+        margin: 5px 0;
+        transition: 0.4s;
+    }
+
     .icons img {
         margin: 0.5rem;
     }
+    
     .about .row {
         flex-direction: column;
         text-align: center;
-    }
-}
-
-@media (max-width: 450px) {
-    html {
-        font-size: 50%;
-    }
-    .content h3 {
-        font-size: 4rem;
     }
 }
