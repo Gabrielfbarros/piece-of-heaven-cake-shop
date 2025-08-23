@@ -321,8 +321,16 @@ section {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        /* Reduz o padding do header para ocupar menos espaço verticalmente */
+        padding: 1rem 2rem;
     }
     
+    .logo img {
+        /* Reduz o tamanho da logo para que o cabeçalho seja mais compacto */
+        max-width: 80px;
+        max-height: 80px;
+    }
+
     .navbar {
         position: absolute;
         top: 100%;
@@ -330,14 +338,14 @@ section {
         right: 0;
         background: var(--maincolor);
         border-top: var(--border);
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); /* Esconde o menu por padrão */
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
         display: flex;
         flex-direction: column;
         text-align: center;
     }
 
     .navbar.active {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* Mostra o menu quando ativo */
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 
     .navbar a {
@@ -351,7 +359,7 @@ section {
     }
 
     .menu-btn {
-        display: block; /* Mostra o botão de menu */
+        display: block;
         cursor: pointer;
     }
 
