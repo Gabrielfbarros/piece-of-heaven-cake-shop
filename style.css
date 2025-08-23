@@ -1,383 +1,391 @@
 /*==================== VARIÁVEIS ====================*/
 :root {
-    --maincolor: #f5d9b7;
-    --bg: #f6ded2;
-    --color1: #fecfdf;
-    --menu: #fe6453;
-    --cake: #fd90b7;
-    --border: 0.1rem solid rgba(2, 2, 2, 0.3);
-    --white: #fff;
-    --black: #13131a;
-    --bg2: #cc0047;
-    --bg3: #720028;
+  --maincolor: #f5d9b7;
+  --bg: #f6ded2;
+  --color1: #fecfdf;
+  --menu: #fe6453;
+  --cake: #fd90b7;
+  --border: 0.1rem solid rgba(2, 2, 2, 0.3);
+  --white: #fff;
+  --black: #13131a;
+  --bg2: #cc0047;
+  --bg3: #720028;
 }
 
 /*==================== CONFIGURAÇÕES GLOBAIS ====================*/
 * {
-    margin: 0;
-    padding: 0;
-    outline: none;
-    border: none;
-    text-decoration: none;
-    text-transform: capitalize;
-    transition: 0.2s linear;
-    font-family: "Roboto", sans-serif;
-    box-sizing: border-box; /* Adicionado para evitar problemas de layout */
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
 }
 
 html {
-    /* Define o tamanho base para o rem, melhorando a acessibilidade */
-    font-size: 62.5%; /* 1rem = 10px */
+  font-size: 62.5%;
 }
 
 body {
-    background-color: var(--bg);
+  background-color: var(--bg);
 }
 
 section {
-    padding: 3rem 2rem;
-    margin: 0 auto;
-    max-width: 1200px;
+  padding: 3rem 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .title {
-    font-size: 4rem;
-    color: var(--bg2);
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 4rem;
+  font-size: 4rem;
+  color: var(--bg2);
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
 }
 
 .title span {
-    color: var(--cake);
-    text-transform: uppercase;
+  color: var(--cake);
+  text-transform: uppercase;
 }
 
 .btn {
-    background: var(--menu);
-    color: var(--white);
-    padding: 1rem 3rem;
-    font-size: 1.7rem;
-    cursor: pointer;
-    margin-top: 1rem;
-    display: inline-block;
-    border-radius: 0.5rem; /* Adicionado para visual mais suave */
+  background: var(--menu);
+  color: var(--white);
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  display: inline-block;
+  border-radius: 0.5rem;
 }
 
 .btn:hover {
-    letter-spacing: 0.1rem;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  letter-spacing: 0.1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 /*==================== HEADER ====================*/
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 99;
-    border-bottom: var(--border);
-    background-color: var(--maincolor);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  border-bottom: var(--border);
+  background-color: var(--maincolor);
 }
 
 .header section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .logo img {
-    max-width: 120px;
-    max-height: 120px;
+  max-width: 120px;
+  max-height: 120px;
 }
 
 .navbar a {
-    margin: 0 1rem;
-    font-size: 1.8rem;
-    font-weight: 500;
-    color: var(--bg3);
+  margin: 0 1rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--bg3);
 }
 
 .navbar a:hover {
-    color: var(--menu);
-    font-size: 2rem;
-    border-bottom: 0.1rem solid var(--menu);
-    padding: 0.5rem;
+  color: var(--menu);
+  font-size: 2rem;
+  border-bottom: 0.1rem solid var(--menu);
+  padding: 0.5rem;
 }
 
 .icons img {
-    margin: 1rem;
-    cursor: pointer;
+  margin: 1rem;
+  cursor: pointer;
 }
 
 .icons img:hover {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 /*==================== SEÇÃO HOME ====================*/
 .home-container {
-    background: url("imgs/bg.jpg");
-    background-position: center;
-    background-size: cover;
+  background: url("imgs/bg.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .home-container section {
-    display: flex;
-    align-items: center;
-    min-height: 100vh;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .content {
-    max-width: 50rem;
+  max-width: 50rem;
 }
 
 .content h3 {
-    color: var(--cake);
-    font-size: 6rem;
+  color: var(--cake);
+  font-size: 6rem;
 }
 
 .content p {
-    color: var(--black);
-    font-size: 2rem;
-    font-weight: 300;
-    line-height: 1.8;
-    padding: 1rem 0;
+  color: var(--black);
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.8;
+  padding: 1rem 0;
 }
 
 /*==================== SEÇÃO SOBRE NÓS ====================*/
 .about .row {
-    display: flex;
-    align-items: center;
-    background-color: var(--maincolor);
-    gap: 1.5rem;
-    flex-wrap: wrap; /* Adicionado para responsividade */
-    border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  background-color: var(--maincolor);
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  border-radius: 1rem;
 }
 
 .about .row .container-image {
-    flex: 1 1 45rem; /* Adicionado para responsividade */
+  flex: 1 1 45rem;
 }
 
 .about img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .about .row .content {
-    flex: 1 1 45rem; /* Adicionado para responsividade */
-    padding: 2rem;
+  flex: 1 1 45rem;
+  padding: 2rem;
 }
 
 .about .row .content h3 {
-    font-size: 3rem;
-    color: var(--bg2);
+  font-size: 3rem;
+  color: var(--bg2);
 }
 
 .about .row .content p {
-    font-size: 1.6rem;
-    color: var(--black);
-    padding: 1rem 0;
-    line-height: 1.8;
+  font-size: 1.6rem;
+  color: var(--black);
+  padding: 1rem 0;
+  line-height: 1.8;
 }
 
 /*==================== SEÇÃO MENU ====================*/
 .box-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
 }
 
 .menu .box-container .box {
-    text-align: center;
-    border: var(--border);
-    padding: 5rem;
-    cursor: pointer;
-    border-radius: 1rem;
+  text-align: center;
+  border: var(--border);
+  padding: 5rem;
+  cursor: pointer;
+  border-radius: 1rem;
 }
 
 .menu .box-container .box img {
-    height: 10rem;
-    width: 10rem;
-    border-radius: 50%;
-    object-fit: cover;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .menu .box-container .box h3 {
-    color: var(--bg2);
-    font-size: 2rem;
-    padding: 1rem 0;
+  color: var(--bg2);
+  font-size: 2rem;
+  padding: 1rem 0;
 }
 
 .menu .box-container .box .price {
-    color: var(--bg2);
-    font-size: 2.5rem;
-    padding: 0.5rem 0;
+  color: var(--bg2);
+  font-size: 2.5rem;
+  padding: 0.5rem 0;
 }
 
 .menu .box-container .box .price span {
-    font-size: 1.5rem;
-    text-decoration: line-through;
-    font-weight: lighter;
+  font-size: 1.5rem;
+  text-decoration: line-through;
+  font-weight: lighter;
 }
 
 .menu .box-container .box:hover {
-    background-color: var(--maincolor);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  background-color: var(--maincolor);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.menu .box-container .box:hover>* {
-    color: var(--black);
+.menu .box-container .box:hover > * {
+  color: var(--black);
 }
 
 /*==================== SEÇÃO AVALIAÇÕES ====================*/
 .review .box-container .box {
-    border: var(--border);
-    text-align: center;
-    padding: 3rem 2rem;
-    border-radius: 1rem;
+  border: var(--border);
+  text-align: center;
+  padding: 3rem 2rem;
+  border-radius: 1rem;
 }
 
 .review .box-container .box p {
-    font-size: 1.5rem;
-    color: var(--black);
-    padding: 2rem 0;
-    line-height: 1.8;
-    font-weight: normal;
+  font-size: 1.5rem;
+  color: var(--black);
+  padding: 2rem 0;
+  line-height: 1.8;
+  font-weight: normal;
 }
 
 .review .box-container .box h3 {
-    color: var(--black);
-    font-size: 2rem;
-    margin: 1rem 0;
+  color: var(--black);
+  font-size: 2rem;
+  margin: 1rem 0;
 }
 
 .review .box-container .box .user {
-    height: 7rem;
-    width: 7rem;
-    border-radius: 50%;
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
 }
 
 .review .box-container .box .stars img {
-    width: 2rem; /* Tamanho ajustado para ficar mais harmonioso */
-    height: 2rem;
-    /* Usando a variável de cor */
-    filter: invert(39%) sepia(34%) saturate(7359%) hue-rotate(320deg) brightness(88%) contrast(92%);
+  width: 2rem;
+  height: 2rem;
+  filter: invert(39%) sepia(34%) saturate(7359%) hue-rotate(320deg)
+    brightness(88%) contrast(92%);
 }
 
 /*==================== SEÇÃO ENDEREÇO ====================*/
 .address {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .address iframe {
-    width: 100%;
-    max-width: 800px;
-    height: 450px;
-    border-radius: 1rem;
+  width: 100%;
+  max-width: 800px;
+  height: 450px;
+  border-radius: 1rem;
 }
 
 /*==================== FOOTER ====================*/
 .footer {
-    text-align: center;
+  text-align: center;
 }
 
 .footer .share {
-    padding: 1rem 0;
+  padding: 1rem 0;
 }
 
 .footer .share img {
-    /* Ajustado para aumentar o tamanho dos ícones */
-    width: 50px;
-    height: 50px;
-    margin: 0.3rem;
-    cursor: pointer;
-    border-radius: 50%;
-    padding: 1rem;
+  width: 50px;
+  height: 50px;
+  margin: 0.3rem;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 1rem;
 }
 
 .footer .share img:hover {
-    background-color: var(--cake);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  background-color: var(--cake);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 /*==================== MEDIA QUERIES (RESPONSIVIDADE) ====================*/
 
 /* Estilos para telas maiores que 768px (Desktop) */
 @media (min-width: 768px) {
-    .menu-btn {
-        display: none; /* Esconde o botão de menu em telas grandes */
-    }
+  .menu-btn {
+    display: none;
+  }
 }
 
 /* Estilos para telas menores que 768px (Mobile/Tablet) */
 @media (max-width: 768px) {
-    .header section {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        /* Reduz o padding do header para ocupar menos espaço verticalmente */
-        padding: 1rem 2rem;
-    }
-    
-    .logo img {
-        /* Reduz o tamanho da logo para que o cabeçalho seja mais compacto */
-        max-width: 80px;
-        max-height: 80px;
-    }
+  .header section {
+    /* Reduz ainda mais o padding para telas pequenas */
+    padding: 0.5rem 1.5rem;
+  }
 
-    .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: var(--maincolor);
-        border-top: var(--border);
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
+  .logo img {
+    /* Reduz o tamanho da logo para telas pequenas */
+    max-width: 70px;
+    max-height: 70px;
+  }
 
-    .navbar.active {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    }
+  .icons img {
+    /* Reduz o tamanho dos ícones para telas pequenas */
+    width: 25px;
+    height: 25px;
+    margin: 0.3rem;
+  }
 
-    .navbar a {
-        display: block;
-        margin: 1rem 0;
-    }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--maincolor);
+    border-top: var(--border);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
 
-    .icons {
-        display: flex;
-        align-items: center;
-    }
+  .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
 
-    .menu-btn {
-        display: block;
-        cursor: pointer;
-    }
+  .navbar a {
+    display: block;
+    margin: 1rem 0;
+  }
 
-    .menu-btn .bar {
-        display: block;
-        width: 25px;
-        height: 3px;
-        background-color: var(--bg2);
-        margin: 5px 0;
-        transition: 0.4s;
-    }
+  .icons {
+    display: flex;
+    align-items: center;
+  }
 
-    .icons img {
-        margin: 0.5rem;
-    }
-    
-    .about .row {
-        flex-direction: column;
-        text-align: center;
-    }
+  .menu-btn {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu-btn .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--bg2);
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+
+  .about .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-container section {
+    /* Ajusta o padding para que o conteúdo não fique escondido sob o cabeçalho */
+    padding-top: 100px;
+  }
+
+  .content h3 {
+    /* Diminui o tamanho da fonte do título principal para mobile */
+    font-size: 4rem;
+  }
 }
