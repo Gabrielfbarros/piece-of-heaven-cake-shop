@@ -559,8 +559,10 @@ section {
 /* Estilos para telas menores que 768px (Mobile/Tablet) */
 @media (max-width: 768px) {
     .header section {
-        padding: 1rem 2rem;
+        padding: 0.1rem 1rem;
     }
+
+
 
     .logo img {
         max-width: 90px;
