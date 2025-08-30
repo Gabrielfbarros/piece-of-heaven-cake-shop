@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Carrinho de Compras - Piece Of Heaven</title>
+  </head>
+  <body>
+    <header class="header">
+      <section>
+        <a href="index.html" class="logo">
+          <img src="imgs/logo.png" alt="Logo da Piece Of Heaven"
+        /></a>
+        <h1 class="header-title">Finalizar Compra</h1>
+      </section>
+    </header>
+
+    <section class="checkout-page">
+      <h2 class="title">Seu <span>Carrinho</span></h2>
+
+      <div id="cart-items" class="cart-items-container"></div>
+
+      <button id="clear-cart-btn" class="btn" style="margin-top: 2rem">
+        Limpar Carrinho
+      </button>
+
+      <div id="total-price" class="total-price"></div>
+
+      <h2 class="title" style="margin-top: 5rem">
+        Informações para <span>Pagamento</span>
+      </h2>
+
+      <form id="payment-form" class="payment-form">
+        <div class="form-group">
+          <label for="name">Nome Completo</label>
+          <input type="text" id="name" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Telefone</label>
+          <input type="tel" id="phone" required />
+        </div>
+        <div class="form-group">
+          <label for="address">Endereço (Rua, Bairro)</label>
+          <input type="text" id="address" required />
+        </div>
+        <div class="form-group">
+          <label for="number">Número</label>
+          <input type="text" id="number" required />
+        </div>
+        <div class="form-group">
+          <label for="complement">Complemento (Apto, Bloco)</label>
+          <input type="text" id="complement" />
+        </div>
+
+        <div class="payment-options">
+          <label>Selecione o método de pagamento:</label>
+          <div class="radio-group">
+            <input
+              type="radio"
+              name="payment-method"
+              id="card-option"
+              value="card"
+              checked
+            />
+            <label for="card-option">Cartão de Crédito</label>
+          </div>
+          <div class="radio-group">
+            <input
+              type="radio"
+              name="payment-method"
+              id="pix-option"
+              value="pix"
+            />
+            <label for="pix-option">Pix</label>
+          </div>
+        </div>
+
+        <div id="card-form" class="payment-details active">
+          <p class="disclaimer">
+            (Este é um formulário de cartão fictício, para simulação.)
+          </p>
+          <div class="form-group">
+            <label for="card-number">Número do Cartão</label>
+            <input type="text" id="card-number" />
+          </div>
+          <div class="form-group">
+            <label for="card-name">Nome no Cartão</label>
+            <input type="text" id="card-name" />
+          </div>
+          <div class="form-group-inline">
+            <div class="form-group">
+              <label for="card-expiry">Validade (MM/AA)</label>
+              <input type="text" id="card-expiry" />
+            </div>
+            <div class="form-group">
+              <label for="card-cvv">CVV</label>
+              <input type="text" id="card-cvv" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="installments">Parcelar em:</label>
+            <div class="installments-group">
+              <select id="installments" class="form-control">
+                <option value="1">1x</option>
+                <option value="2">2x</option>
+                <option value="3">3x</option>
+              </select>
+              <span id="installment-price" class="installment-price"></span>
+            </div>
+          </div>
+        </div>
+
+        <div id="pix-details" class="payment-details">
+          <div class="pix-info">
+            <p>
+              Escaneie o QR Code abaixo ou utilize o código para pagar com Pix.
+            </p>
+            <img src="imgs/qr-code-plus.png" alt="QR Code Pix" class="qrcode" />
+
+            <input
+              type="text"
+              id="pix-code"
+              value="chave-pix-ficticia-exemplo"
+              readonly
+            />
+            <button type="button" class="btn btn-copy-pix">
+              Copiar Código Pix
+            </button>
+
+            <p class="disclaimer">
+              (Este é um exemplo visual. Não é um QR Code ou chave funcional.)
+            </p>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <a href="index.html" class="btn btn-voltar">Voltar</a>
+          <button type="submit" class="btn">Finalizar Pedido</button>
+        </div>
+      </form>
+    </section>
+
+    <script src="carrinho.js"></script>
+  </body>
+</html>

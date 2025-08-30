@@ -9,52 +9,64 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" href="imgs/pedaco-de-bolo.png" type="image/x-icon" />
-    <!-- Vincula o arquivo CSS principal -->
+    <link
+      rel="shortcut icon"
+      href="imgs/pedaco-de-bolo.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Piece Of Heaven</title>
   </head>
   <body>
-    <!-- HEADER (CABEÇALHO) -->
     <header class="header">
       <section>
-        <!-- Logo do site -->
-        <a href="#" class="logo"> <img src="imgs/logo.png" alt="Logo da Piece Of Heaven" /></a>
-        <!-- Barra de navegação -->
+        <a href="#" class="logo">
+          <img src="imgs/logo.png" alt="Logo da Piece Of Heaven"
+        /></a>
         <nav class="navbar">
           <a href="#home">Home</a>
           <a href="#about">Sobre</a>
-          <a href="#menu">Menu</a>
+          <a href="#menu">Menu</a>  
           <a href="#review">Avaliações</a>
           <a href="#address">Endereço</a>
         </nav>
-        <!-- Ícones de busca, carrinho e menu hambúrguer -->
         <div class="icons">
-          <div id="menu-btn" class="menu-btn">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+          <img
+            width="30"
+            height="30"
+            src="https://img.icons8.com/ios-filled/30/fe6453/search--v2.png"
+            alt="Ícone de busca"
+          />
+          <div id="cart-btn" class="cart-container">
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ios-glyphs/30/fe6453/shopping-cart--v1.png"
+              alt="Ícone de carrinho de compras"
+            /><span id="cart-count">0</span>
           </div>
-          <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/fe6453/search--v2.png" alt="Ícone de busca" />
-          <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/fe6453/shopping-cart--v1.png" alt="Ícone de carrinho de compras" />
+          <div id="menu-btn" class="menu-btn">
+            <span class="bar"></span><span class="bar"></span
+            ><span class="bar"></span>
+          </div>
         </div>
       </section>
     </header>
-
-    <!-- SEÇÃO HOME -->
     <div class="home-container">
       <section id="home">
         <div class="content">
           <h3>O PEDAÇO QUE TE LEVA AOS CÉUS!</h3>
           <p>
-            Cada garfada é como um convite para o paraíso — um pedaço macio, úmido e delicadamente doce que derrete na boca, liberando aromas e sabores que fazem o tempo desacelerar. É mais que um bolo, é uma experiência celestial, capaz de transformar qualquer momento simples em algo mágico.
+            Cada garfada é como um convite para o paraíso — um pedaço macio,
+            úmido e delicadamente doce que derrete na boca, liberando aromas e
+            sabores que fazem o tempo desacelerar. É mais que um bolo, é uma
+            experiência celestial, capaz de transformar qualquer momento simples
+            em algo mágico.
           </p>
           <a href="#" class="btn">Peça o seu agora</a>
         </div>
       </section>
     </div>
-
-    <!-- SEÇÃO SOBRE NÓS -->
     <section class="about" id="about">
       <h2 class="title">Sobre <span>Nós</span></h2>
       <div class="row">
@@ -63,54 +75,59 @@
         </div>
         <div class="content">
           <h3>O Que Faz Nosso Bolo Especial</h3>
-          <p> O que torna o nosso bolo especial é a dedicação em cada detalhe. Usamos ingredientes selecionados e frescos, sempre prezando pela qualidade e pelo sabor autêntico. Cada fatia é preparada com carinho para oferecer uma experiência única, que vai além de um simples doce. </p>
-          <p> Nossos bolos combinam tradição e criatividade, trazendo receitas clássicas com um toque moderno. A textura macia, o equilíbrio no recheio e a apresentação caprichada fazem com que cada pedaço seja um convite para saborear momentos especiais. </p>
+          <p>
+            O que torna o nosso bolo especial é a dedicação em cada detalhe.
+            Usamos ingredientes selecionados e frescos, sempre prezando pela
+            qualidade e pelo sabor autêntico. Cada fatia é preparada com carinho
+            para oferecer uma experiência única, que vai além de um simples
+            doce.
+          </p>
+          <p>
+            Nossos bolos combinam tradição e criatividade, trazendo receitas
+            clássicas com um toque moderno. A textura macia, o equilíbrio no
+            recheio e a apresentação caprichada fazem com que cada pedaço seja
+            um convite para saborear momentos especiais.
+          </p>
           <a href="#" class="btn">Saiba mais</a>
         </div>
       </div>
     </section>
-
-    <!-- SEÇÃO MENU -->
     <section class="menu" id="menu">
       <h2 class="title">Nosso <span>Menu</span></h2>
-
       <div class="box-container">
-        <!-- Item 1 do menu -->
         <div class="box">
           <img src="./imgs/menu-1.png" alt="Bolo Red Velvet com morangos" />
           <h3>Red Velvet com Morango 🍓</h3>
           <div class="price">R$ 15,99 <span>R$ 20,99</span></div>
           <a href="#" class="btn"> Adicione ao Carrinho</a>
         </div>
-        <!-- Item 2 do menu -->
         <div class="box">
           <img src="./imgs/menu-2.png" alt="Fatia de bolo de baunilha" />
           <h3>Bolo de Baunilha Clássico 🍯</h3>
           <div class="price">R$ 15,99 <span>R$ 20,99</span></div>
           <a href="#" class="btn"> Adicione ao Carrinho</a>
         </div>
-        <!-- Item 3 do menu -->
         <div class="box">
           <img src="./imgs/menu-3.png" alt="Fatia de cheesecake de mirtilo" />
           <h3>Cheesecake de Mirtilo</h3>
           <div class="price">R$ 13,99 <span>R$ 18,99</span></div>
           <a href="#" class="btn"> Adicione ao Carrinho</a>
         </div>
-        <!-- Item 4 do menu -->
         <div class="box">
           <img src="./imgs/menu-4.png" alt="Fatia de bolo de limão siciliano" />
           <h3>Bolo de Limão Siciliano 🍋</h3>
           <div class="price">R$ 11,99 <span>R$ 12,99</span></div>
           <a href="#" class="btn"> Adicione ao Carrinho</a>
         </div>
-        <!-- Item 5 do menu -->
         <div class="box">
-          <img src="./imgs/menu-5.png" alt="Fatia de bolo de chocolate cremoso" />
+          <img
+            src="./imgs/menu-5.png"
+            alt="Fatia de bolo de chocolate cremoso"
+          />
           <h3>Bolo de Chocolate Cremoso 🍫</h3>
           <div class="price">R$ 8,99 <span>R$ 13,99</span></div>
           <a href="#" class="btn"> Adicione ao Carrinho</a>
         </div>
-        <!-- Item 6 do menu -->
         <div class="box">
           <img src="./imgs/menu-6.png" alt="Fatia de bolo de coco" />
           <h3>Bolo de Coco Neve 🥥</h3>
@@ -119,80 +136,175 @@
         </div>
       </div>
     </section>
-
-    <!-- SEÇÃO AVALIAÇÕES -->
     <section class="review" id="review">
       <h2 class="title">Nossos <span>Clientes</span></h2>
-
       <div class="box-container">
-        <!-- Avaliação 1 -->
         <div class="box">
-          <img src="./imgs/quote-img.png" alt="Ícone de aspas para comentário" />
+          <img
+            src="./imgs/quote-img.png"
+            alt="Ícone de aspas para comentário"
+          />
           <p>
-            O bolo de chocolate é simplesmente irresistível, super macio e com um recheio cremoso que derrete na boca. Vale cada pedaço!
+            O bolo de chocolate é simplesmente irresistível, super macio e com
+            um recheio cremoso que derrete na boca. Vale cada pedaço!
           </p>
-          <img src="./imgs/pic-1.png" alt="Foto do cliente Marcos Silva" class="user" />
+          <img
+            src="./imgs/pic-1.png"
+            alt="Foto do cliente Marcos Silva"
+            class="user"
+          />
           <h3>Marcos Silva</h3>
           <div class="stars">
-            <!-- Ícones de estrelas -->
-            <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/cc0047/star--v1.png" alt="Estrela completa" />
-            <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/cc0047/star--v1.png" alt="Estrela completa" />
-            <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/cc0047/star--v1.png" alt="Estrela completa" />
-            <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/cc0047/star--v1.png" alt="Estrela completa" />
-            <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/cc0047/star-half-empty.png" alt="Meia estrela" />
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ios-filled/30/cc0047/star--v1.png"
+              alt="Estrela completa"
+            /><img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ios-filled/30/cc0047/star--v1.png"
+              alt="Estrela completa"
+            /><img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ios-filled/30/cc0047/star--v1.png"
+              alt="Estrela completa"
+            /><img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ios-filled/30/cc0047/star--v1.png"
+              alt="Estrela completa"
+            /><img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ios-glyphs/30/cc0047/star-half-empty.png"
+              alt="Meia estrela"
+            />
           </div>
         </div>
-        <!-- Avaliação 2 -->
         <div class="box">
-          <img src="./imgs/quote-img.png" alt="Ícone de aspas para comentário" />
+          <img
+            src="./imgs/quote-img.png"
+            alt="Ícone de aspas para comentário"
+          />
           <p>
-            A cheesecake de mirtilo surpreendeu, tem o equilíbrio perfeito entre doce e azedinho, além de uma textura incrivelmente cremosa.
+            A cheesecake de mirtilo surpreendeu, tem o equilíbrio perfeito entre
+            doce e azedinho, além de uma textura incrivelmente cremosa.
           </p>
-          <img src="./imgs/pic-2.png" alt="Foto da cliente Beatriz Souza" class="user" />
+          <img
+            src="./imgs/pic-2.png"
+            alt="Foto da cliente Beatriz Souza"
+            class="user"
+          />
           <h3>Beatriz Souza</h3>
           <div class="stars">
-            <!-- Ícones de estrelas -->
-            <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/cc0047/star--v1.png" alt="Estrela completa" />
-            <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/cc0047/star--v1.png" alt="Estrela completa" />
-            <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/cc0047/star--v1.png" alt="Estrela completa" />
-            <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/cc0047/star--v1.png" alt="Estrela completa" />
-            <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/cc0047/star--v1.png" alt="Estrela completa" />
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ios-filled/30/cc0047/star--v1.png"
+              alt="Estrela completa"
+            /><img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ios-filled/30/cc0047/star--v1.png"
+              alt="Estrela completa"
+            /><img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ios-filled/30/cc0047/star--v1.png"
+              alt="Estrela completa"
+            /><img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ios-filled/30/cc0047/star--v1.png"
+              alt="Estrela completa"
+            /><img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ios-filled/30/cc0047/star--v1.png"
+              alt="Estrela completa"
+            />
           </div>
         </div>
-        <!-- Avaliação 3 -->
         <div class="box">
-          <img src="./imgs/quote-img.png" alt="Ícone de aspas para comentário" />
-          <p>O bolo de limão é delicioso, leve e refrescante, com aquele toque cítrico que dá vontade de repetir.</p>
-          <img src="./imgs/pic-3.png" alt="Foto do cliente Rodrigo Barros" class="user" />
+          <img
+            src="./imgs/quote-img.png"
+            alt="Ícone de aspas para comentário"
+          />
+          <p>
+            O bolo de limão é delicioso, leve e refrescante, com aquele toque
+            cítrico que dá vontade de repetir.
+          </p>
+          <img
+            src="./imgs/pic-3.png"
+            alt="Foto do cliente Rodrigo Barros"
+            class="user"
+          />
           <h3>Rodrigo Barros</h3>
           <div class="stars">
-            <!-- Ícones de estrelas -->
-            <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/cc0047/star--v1.png" alt="Estrela completa" />
-            <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/cc0047/star--v1.png" alt="Estrela completa" />
-            <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/cc0047/star--v1.png" alt="Estrela completa" />
-            <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/cc0047/star--v1.png" alt="Estrela completa" />
-            <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/cc0047/star--v1.png" alt="Estrela completa" />
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ios-filled/30/cc0047/star--v1.png"
+              alt="Estrela completa"
+            /><img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ios-filled/30/cc0047/star--v1.png"
+              alt="Estrela completa"
+            /><img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ios-filled/30/cc0047/star--v1.png"
+              alt="Estrela completa"
+            /><img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ios-filled/30/cc0047/star--v1.png"
+              alt="Estrela completa"
+            /><img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ios-filled/30/cc0047/star--v1.png"
+              alt="Estrela completa"
+            />
           </div>
         </div>
       </div>
     </section>
-
-    <!-- SEÇÃO ENDEREÇO -->
     <section class="address" id="address">
       <h2 class="title">Nosso <span>Endereço</span></h2>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6255.162783940603!2d-47.61328782725821!3d-21.218280957736674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9c58756468223%3A0xb6a39e04838cccd7!2sPedacinho%20do%20C%C3%A9u!5e0!3m2!1spt-BR!2sbr!4v1755381538811!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.070086307185!2d-47.886008823793746!3d-22.313012179611226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9bd3b52f9b87b%3A0x6a05e1974d6c4e0!2sRibeir%C3%A3o%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1717882208620!5m2!1spt-BR!2sbr"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
     </section>
-
-    <!-- RODAPÉ -->
     <section class="footer">
       <div class="share">
-        <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/cc0047/instagram-new.png" alt="Ícone do Instagram" />
-        <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/cc0047/facebook-new.png" alt="Ícone do Facebook" />
-        <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/cc0047/twitterx--v1.png" alt="Ícone do Twitter" />
+        <img
+          width="30"
+          height="30"
+          src="https://img.icons8.com/ios-glyphs/30/cc0047/instagram-new.png"
+          alt="Ícone do Instagram"
+        /><img
+          width="30"
+          height="30"
+          src="https://img.icons8.com/ios-glyphs/30/cc0047/facebook-new.png"
+          alt="Ícone do Facebook"
+        /><img
+          width="30"
+          height="30"
+          src="https://img.icons8.com/ios-glyphs/30/cc0047/twitterx--v1.png"
+          alt="Ícone do Twitter"
+        />
       </div>
     </section>
-    <!-- Adicione o link para o script aqui -->
     <script src="script.js"></script>
   </body>
 </html>
-
